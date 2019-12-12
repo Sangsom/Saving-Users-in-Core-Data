@@ -1,0 +1,23 @@
+//
+//  AppDelegate.swift
+//  Saving Users in Core Data
+//
+//  Created by Rinalds Domanovs on 11/12/2019.
+//  Copyright © 2019 Rinalds Domanovs. All rights reserved.
+//
+
+import UIKit
+import CoreData
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        return true
+    }
+
+}
+
