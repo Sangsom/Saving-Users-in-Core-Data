@@ -39,8 +39,8 @@ class UsersTableViewController: UITableViewController {
     }
 }
 
+// MARK: - Table view data source
 extension UsersTableViewController {
-    // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users.count
     }

@@ -14,6 +14,14 @@ class UserDetailsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        navigationController?.navigationBar.prefersLargeTitles = false
+        title = "User Details"
+
+        loadData()
+    }
+
+    func loadData() {
+        print("Loading")
     }
 
 }
