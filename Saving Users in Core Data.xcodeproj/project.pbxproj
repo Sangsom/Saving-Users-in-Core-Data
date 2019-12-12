@@ -60,17 +60,25 @@
 		1BBAC36223A179BD000304D6 /* Saving Users in Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				1BBAC38023A226D6000304D6 /* Views */,
 				1BBAC36323A179BD000304D6 /* AppDelegate.swift */,
-				1BBAC36723A179BD000304D6 /* ViewController.swift */,
 				1BBAC37C23A1F9A9000304D6 /* PersistanceService.swift */,
 				1BBAC36923A179BD000304D6 /* Main.storyboard */,
-				1BBAC37E23A2028F000304D6 /* UsersTableViewController.swift */,
 				1BBAC36F23A179BE000304D6 /* Assets.xcassets */,
 				1BBAC37123A179BE000304D6 /* LaunchScreen.storyboard */,
 				1BBAC37423A179BE000304D6 /* Info.plist */,
 				1BBAC36C23A179BD000304D6 /* Saving_Users_in_Core_Data.xcdatamodeld */,
 			);
 			path = "Saving Users in Core Data";
+			sourceTree = "<group>";
+		};
+		1BBAC38023A226D6000304D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1BBAC36723A179BD000304D6 /* ViewController.swift */,
+				1BBAC37E23A2028F000304D6 /* UsersTableViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
