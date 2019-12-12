@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var vStack: UIStackView!
+
     var nameTextField: FormTextField!
     var surnameTextField: FormTextField!
 
@@ -41,7 +43,7 @@ class ViewController: UIViewController {
 
     func setupUI() {
 
-        let vStack = UIStackView()
+        vStack = UIStackView()
         vStack.axis = .vertical
         vStack.alignment = .fill
         vStack.distribution = .fillEqually
@@ -126,8 +128,13 @@ class ViewController: UIViewController {
         // Save into Core Data
         PersistanceService.saveContext()
 
-        nameTextField.resignFirstResponder()
-        surnameTextField.resignFirstResponder()
+        for textField in vStack.arrangedSubviews where textField is UITextField {
+            let field = textField as! UITextField
+            field.text = ""
+            field.resignFirstResponder()
+        }
+
+        // Alert of success
     }
 }
 
