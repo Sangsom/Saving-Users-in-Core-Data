@@ -95,9 +95,13 @@ class ViewController: UIViewController {
         guard let firstName = nameTextField.text, let lastName = surnameTextField.text else { return }
 
         // Create User data
+        let address = Address(context: PersistanceService.context)
+        address.country = "Latvia"
+
         let user = User(context: PersistanceService.context)
         user.firstName = firstName
         user.lastName = lastName
+        user.address = address
 
         // Save into Core Data
         PersistanceService.saveContext()

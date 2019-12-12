@@ -15,6 +15,10 @@
 		1BBAC37323A179BE000304D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BBAC37123A179BE000304D6 /* LaunchScreen.storyboard */; };
 		1BBAC37D23A1F9A9000304D6 /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBAC37C23A1F9A9000304D6 /* PersistanceService.swift */; };
 		1BBAC37F23A2028F000304D6 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBAC37E23A2028F000304D6 /* UsersTableViewController.swift */; };
+		1BE5BAC623A22AD200A7A00E /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE5BAC223A22AD200A7A00E /* User+CoreDataClass.swift */; };
+		1BE5BAC723A22AD200A7A00E /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE5BAC323A22AD200A7A00E /* User+CoreDataProperties.swift */; };
+		1BE5BAC823A22AD200A7A00E /* Address+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE5BAC423A22AD200A7A00E /* Address+CoreDataClass.swift */; };
+		1BE5BAC923A22AD200A7A00E /* Address+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE5BAC523A22AD200A7A00E /* Address+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		1BBAC37423A179BE000304D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BBAC37C23A1F9A9000304D6 /* PersistanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceService.swift; sourceTree = "<group>"; };
 		1BBAC37E23A2028F000304D6 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		1BE5BAC223A22AD200A7A00E /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1BE5BAC323A22AD200A7A00E /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1BE5BAC423A22AD200A7A00E /* Address+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1BE5BAC523A22AD200A7A00E /* Address+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,10 @@
 		1BBAC35723A179BD000304D6 = {
 			isa = PBXGroup;
 			children = (
+				1BE5BAC223A22AD200A7A00E /* User+CoreDataClass.swift */,
+				1BE5BAC323A22AD200A7A00E /* User+CoreDataProperties.swift */,
+				1BE5BAC423A22AD200A7A00E /* Address+CoreDataClass.swift */,
+				1BE5BAC523A22AD200A7A00E /* Address+CoreDataProperties.swift */,
 				1BBAC36223A179BD000304D6 /* Saving Users in Core Data */,
 				1BBAC36123A179BD000304D6 /* Products */,
 			);
@@ -152,11 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE5BAC823A22AD200A7A00E /* Address+CoreDataClass.swift in Sources */,
 				1BBAC36823A179BD000304D6 /* ViewController.swift in Sources */,
 				1BBAC36423A179BD000304D6 /* AppDelegate.swift in Sources */,
+				1BE5BAC623A22AD200A7A00E /* User+CoreDataClass.swift in Sources */,
+				1BE5BAC723A22AD200A7A00E /* User+CoreDataProperties.swift in Sources */,
 				1BBAC36E23A179BD000304D6 /* Saving_Users_in_Core_Data.xcdatamodeld in Sources */,
 				1BBAC37F23A2028F000304D6 /* UsersTableViewController.swift in Sources */,
 				1BBAC37D23A1F9A9000304D6 /* PersistanceService.swift in Sources */,
+				1BE5BAC923A22AD200A7A00E /* Address+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

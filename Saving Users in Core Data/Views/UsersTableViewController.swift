@@ -49,6 +49,7 @@ extension UsersTableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let fullName = "\(users[indexPath.row].firstName!) \(users[indexPath.row].lastName!)"
         cell.textLabel?.text = fullName
+        cell.detailTextLabel?.text = users[indexPath.row].address?.country
         return cell
     }
 
