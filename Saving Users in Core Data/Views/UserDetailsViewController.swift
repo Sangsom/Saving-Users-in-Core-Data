@@ -12,6 +12,9 @@ class UserDetailsViewController: UIViewController {
 
     var user: User!
 
+    var vStack: UIStackView!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +26,36 @@ class UserDetailsViewController: UIViewController {
     }
 
     func loadData() {
-        print("Loading", user.firstName)
+        vStack = UIStackView()
+        vStack.axis = .vertical
+        vStack.alignment = .center
+        vStack.distribution = .fillEqually
+        vStack.spacing = 8
+        vStack.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(vStack)
+
+        NSLayoutConstraint.activate([
+            vStack.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            vStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            vStack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+        ])
+
+        if let firstName = user.firstName, let lastName = user.lastName {
+            let nameLabel = UILabel()
+            nameLabel.text = "\(firstName) \(lastName)"
+            vStack.addArrangedSubview(nameLabel)
+        }
+
+        if let address = user.address,
+            let street = address.street,
+            let city = address.city,
+            let country = address.country,
+            let zip = address.zip {
+                let addressLabel = UILabel()
+                addressLabel.text = "\(street), \(city), \(country), \(zip)"
+                vStack.addArrangedSubview(addressLabel)
+        }
+
     }
 
 }
