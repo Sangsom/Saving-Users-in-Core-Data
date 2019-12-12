@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var nameTextField: UITextField!
-    var surnameTextField: UITextField!
+    var nameTextField: FormTextField!
+    var surnameTextField: FormTextField!
     var saveButton: UIButton!
 
     var isValid = false {
@@ -50,14 +50,10 @@ class ViewController: UIViewController {
 
         ])
 
-        nameTextField = UITextField()
+        nameTextField = FormTextField()
         nameTextField.delegate = self
         nameTextField.placeholder = "Name"
-        nameTextField.layer.borderColor = UIColor.black.cgColor
-        nameTextField.layer.borderWidth = 1
-        nameTextField.layer.cornerRadius = 8
         nameTextField.translatesAutoresizingMaskIntoConstraints = false
-        nameTextField.autocorrectionType = .no
         vStack.addArrangedSubview(nameTextField)
 
         NSLayoutConstraint.activate([
@@ -65,14 +61,10 @@ class ViewController: UIViewController {
             nameTextField.trailingAnchor.constraint(equalTo: vStack.trailingAnchor, constant: 8)
         ])
 
-        surnameTextField = UITextField()
+        surnameTextField = FormTextField()
         surnameTextField.delegate = self
         surnameTextField.placeholder = "Surname"
-        surnameTextField.layer.borderColor = UIColor.black.cgColor
-        surnameTextField.layer.borderWidth = 1
-        surnameTextField.layer.cornerRadius = 8
         surnameTextField.translatesAutoresizingMaskIntoConstraints = false
-        surnameTextField.autocorrectionType = .no
         vStack.addArrangedSubview(surnameTextField)
 
         NSLayoutConstraint.activate([
