@@ -17,7 +17,10 @@ extension Address {
         return NSFetchRequest<Address>(entityName: "Address")
     }
 
+    @NSManaged public var street: String?
     @NSManaged public var country: String?
+    @NSManaged public var city: String?
+    @NSManaged public var zip: String?
     @NSManaged public var user: User?
 
 }
