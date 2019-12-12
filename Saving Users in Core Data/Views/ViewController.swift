@@ -135,6 +135,9 @@ class ViewController: UIViewController {
         }
 
         // Alert of success
+        let ac = UIAlertController(title: "User Added", message: "\(firstName) \(lastName) added successfully.", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
     }
 }
 
