@@ -50,6 +50,15 @@ class ViewController: UIViewController {
 
         ])
 
+        let nameLabel = UILabel()
+        nameLabel.text = "Name"
+        nameLabel.translatesAutoresizingMaskIntoConstraints = false
+        vStack.addArrangedSubview(nameLabel)
+
+        NSLayoutConstraint.activate([
+            nameLabel.leadingAnchor.constraint(equalTo: vStack.leadingAnchor, constant: 8)
+        ])
+
         nameTextField = FormTextField()
         nameTextField.delegate = self
         nameTextField.placeholder = "Name"
