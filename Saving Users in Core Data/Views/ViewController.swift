@@ -12,6 +12,12 @@ class ViewController: UIViewController {
 
     var nameTextField: FormTextField!
     var surnameTextField: FormTextField!
+
+    var streetTextField: FormTextField!
+    var countryTextField: FormTextField!
+    var cityTextField: FormTextField!
+    var zipTextField: FormTextField!
+
     var saveButton: UIButton!
 
     var isValid = false {
@@ -68,7 +74,21 @@ class ViewController: UIViewController {
         addressLabel.text = "Address Details"
         vStack.addArrangedSubview(addressLabel)
 
-        
+        streetTextField = FormTextField()
+        streetTextField.placeholder = "Street"
+        vStack.addArrangedSubview(streetTextField)
+
+        countryTextField = FormTextField()
+        countryTextField.placeholder = "Country"
+        vStack.addArrangedSubview(countryTextField)
+
+        cityTextField = FormTextField()
+        cityTextField.placeholder = "City"
+        vStack.addArrangedSubview(cityTextField)
+
+        zipTextField = FormTextField()
+        zipTextField.placeholder = "Zip/Postal Code"
+        vStack.addArrangedSubview(zipTextField)
 
         saveButton = UIButton(type: .system)
         saveButton.isEnabled = false
