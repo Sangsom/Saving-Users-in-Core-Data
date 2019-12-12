@@ -45,41 +45,30 @@ class ViewController: UIViewController {
 
         NSLayoutConstraint.activate([
             vStack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            vStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
-            vStack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8)
+            vStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            vStack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
 
         ])
 
         let nameLabel = UILabel()
         nameLabel.text = "Name"
-        nameLabel.translatesAutoresizingMaskIntoConstraints = false
         vStack.addArrangedSubview(nameLabel)
-
-        NSLayoutConstraint.activate([
-            nameLabel.leadingAnchor.constraint(equalTo: vStack.leadingAnchor, constant: 8)
-        ])
 
         nameTextField = FormTextField()
         nameTextField.delegate = self
         nameTextField.placeholder = "Name"
-        nameTextField.translatesAutoresizingMaskIntoConstraints = false
         vStack.addArrangedSubview(nameTextField)
-
-        NSLayoutConstraint.activate([
-            nameTextField.leadingAnchor.constraint(equalTo: vStack.leadingAnchor, constant: 8),
-            nameTextField.trailingAnchor.constraint(equalTo: vStack.trailingAnchor, constant: 8)
-        ])
 
         surnameTextField = FormTextField()
         surnameTextField.delegate = self
         surnameTextField.placeholder = "Surname"
-        surnameTextField.translatesAutoresizingMaskIntoConstraints = false
         vStack.addArrangedSubview(surnameTextField)
 
-        NSLayoutConstraint.activate([
-            surnameTextField.leadingAnchor.constraint(equalTo: vStack.leadingAnchor, constant: 8),
-            surnameTextField.trailingAnchor.constraint(equalTo: vStack.trailingAnchor, constant: 8)
-        ])
+        let addressLabel = UILabel()
+        addressLabel.text = "Address Details"
+        vStack.addArrangedSubview(addressLabel)
+
+        
 
         saveButton = UIButton(type: .system)
         saveButton.isEnabled = false
