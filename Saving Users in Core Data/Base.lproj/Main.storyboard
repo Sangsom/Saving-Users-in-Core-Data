@@ -113,7 +113,7 @@
         <!--User Details View Controller-->
         <scene sceneID="jdf-jc-Wlh">
             <objects>
-                <viewController id="dUg-Xe-KI8" customClass="UserDetailsViewController" customModule="Saving_Users_in_Core_Data" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserDetails" id="dUg-Xe-KI8" customClass="UserDetailsViewController" customModule="Saving_Users_in_Core_Data" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ueh-Fv-dlP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
