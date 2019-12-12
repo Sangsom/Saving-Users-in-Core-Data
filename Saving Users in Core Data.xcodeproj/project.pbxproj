@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B4EF64523A23E0C00F6E124 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4EF64423A23E0C00F6E124 /* FormTextField.swift */; };
+		1B657BDB23A26C280026CAB2 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B657BDA23A26C280026CAB2 /* UserDetailsViewController.swift */; };
 		1BBAC36423A179BD000304D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBAC36323A179BD000304D6 /* AppDelegate.swift */; };
 		1BBAC36823A179BD000304D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBAC36723A179BD000304D6 /* ViewController.swift */; };
 		1BBAC36B23A179BD000304D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BBAC36923A179BD000304D6 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		1B4EF64423A23E0C00F6E124 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		1B657BDA23A26C280026CAB2 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		1BBAC36023A179BD000304D6 /* Saving Users in Core Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saving Users in Core Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BBAC36323A179BD000304D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BBAC36723A179BD000304D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				1BBAC36723A179BD000304D6 /* ViewController.swift */,
 				1BBAC37E23A2028F000304D6 /* UsersTableViewController.swift */,
 				1B4EF64423A23E0C00F6E124 /* FormTextField.swift */,
+				1B657BDA23A26C280026CAB2 /* UserDetailsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				1BE5BAC723A22AD200A7A00E /* User+CoreDataProperties.swift in Sources */,
 				1BBAC36E23A179BD000304D6 /* Saving_Users_in_Core_Data.xcdatamodeld in Sources */,
 				1BBAC37F23A2028F000304D6 /* UsersTableViewController.swift in Sources */,
+				1B657BDB23A26C280026CAB2 /* UserDetailsViewController.swift in Sources */,
 				1BBAC37D23A1F9A9000304D6 /* PersistanceService.swift in Sources */,
 				1BE5BAC923A22AD200A7A00E /* Address+CoreDataProperties.swift in Sources */,
 			);

@@ -71,11 +71,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="bbw-Xi-7p4" detailTextLabel="dsk-lK-XZg" style="IBUITableViewCellStyleSubtitle" id="Tqo-St-56E">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="bbw-Xi-7p4" detailTextLabel="dsk-lK-XZg" style="IBUITableViewCellStyleSubtitle" id="Tqo-St-56E">
                                 <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tqo-St-56E" id="oTs-sL-6lS">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="55.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bbw-Xi-7p4">
@@ -102,10 +102,29 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Users" image="person" catalog="system" id="67T-6Q-o50"/>
+                    <connections>
+                        <segue destination="dUg-Xe-KI8" kind="show" id="Jxj-6D-lBE"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wEA-2Z-J4a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2000" y="331"/>
+        </scene>
+        <!--User Details View Controller-->
+        <scene sceneID="jdf-jc-Wlh">
+            <objects>
+                <viewController id="dUg-Xe-KI8" customClass="UserDetailsViewController" customModule="Saving_Users_in_Core_Data" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ueh-Fv-dlP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ST8-om-UJ4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VAY-G3-smF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgw-Rn-O0u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2878" y="331"/>
         </scene>
     </scenes>
     <resources>
