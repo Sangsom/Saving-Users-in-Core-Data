@@ -24,6 +24,8 @@ class UsersTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addUser))
     }
 
     func loadData() {
@@ -36,6 +38,12 @@ class UsersTableViewController: UITableViewController {
         } catch {
             print(error.localizedDescription)
         }
+    }
+
+    @objc func addUser() {
+        let vc = UIViewController()
+        vc.modalPresentationStyle = .formSheet
+        present(vc, animated: true)
     }
 }
 
