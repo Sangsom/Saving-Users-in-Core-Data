@@ -55,6 +55,7 @@ extension UsersTableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(identifier: "UserDetails") as? UserDetailsViewController {
+            vc.user = users[indexPath.row]
             navigationController?.pushViewController(vc, animated: true)
         }
     }

@@ -10,6 +10,8 @@ import UIKit
 
 class UserDetailsViewController: UIViewController {
 
+    var user: User!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +23,7 @@ class UserDetailsViewController: UIViewController {
     }
 
     func loadData() {
-        print("Loading")
+        print("Loading", user.firstName)
     }
 
 }
