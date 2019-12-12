@@ -26,6 +26,7 @@
 /* Begin PBXFileReference section */
 		1B4EF64423A23E0C00F6E124 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		1B657BDA23A26C280026CAB2 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		1B74E3FF23A28AD3000C801F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1BBAC36023A179BD000304D6 /* Saving Users in Core Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saving Users in Core Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BBAC36323A179BD000304D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BBAC36723A179BD000304D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		1BBAC35723A179BD000304D6 = {
 			isa = PBXGroup;
 			children = (
+				1B74E3FF23A28AD3000C801F /* README.md */,
 				1BE5BAC223A22AD200A7A00E /* User+CoreDataClass.swift */,
 				1BE5BAC323A22AD200A7A00E /* User+CoreDataProperties.swift */,
 				1BE5BAC423A22AD200A7A00E /* Address+CoreDataClass.swift */,
