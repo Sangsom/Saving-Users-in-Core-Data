@@ -10,6 +10,8 @@ import UIKit
 
 class AddUserViewController: UIViewController {
 
+    var usersController = UserController()
+
     var vStack: UIStackView!
 
     var nameTextField: FormTextField!
@@ -117,8 +119,7 @@ class AddUserViewController: UIViewController {
 
         user.address = address
 
-        // Save into Core Data
-        PersistanceService.saveContext()
+        usersController.addUser(user: user)
 
         for textField in vStack.arrangedSubviews where textField is UITextField {
             let field = textField as! UITextField
@@ -127,7 +128,7 @@ class AddUserViewController: UIViewController {
         }
 
         self.dismiss(animated: true) {
-
+            print("Dismissing")
         }
     }
 

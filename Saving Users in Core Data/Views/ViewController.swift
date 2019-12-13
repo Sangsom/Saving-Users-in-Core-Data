@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var usersController = UserController()
+
     var vStack: UIStackView!
 
     var nameTextField: FormTextField!
@@ -107,7 +109,6 @@ class ViewController: UIViewController {
         guard let firstName = nameTextField.text, let lastName = surnameTextField.text else { return }
 
         // Create User data
-
         let user = User(context: PersistanceService.context)
         user.firstName = firstName
         user.lastName = lastName
@@ -125,8 +126,7 @@ class ViewController: UIViewController {
         
         user.address = address
 
-        // Save into Core Data
-        PersistanceService.saveContext()
+        usersController.addUser(user: user)
 
         for textField in vStack.arrangedSubviews where textField is UITextField {
             let field = textField as! UITextField

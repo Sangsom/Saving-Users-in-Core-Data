@@ -11,8 +11,8 @@ import CoreData
 
 class UsersTableViewController: UITableViewController {
 
-    var users = [User]()
     var usersController = UserController()
+    var users = [User]()
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

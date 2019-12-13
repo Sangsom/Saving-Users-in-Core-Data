@@ -26,4 +26,9 @@ class UserController {
         return usersList
     }
 
+    func addUser(user: User) {
+        // Save into Core Data
+        PersistanceService.saveContext()
+    }
+
 }
