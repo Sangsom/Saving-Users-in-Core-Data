@@ -60,4 +60,15 @@ extension UsersTableViewController {
         }
     }
 
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let commit = users[indexPath.row]
+            PersistanceService.context.delete(commit)
+            users.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+
+            PersistanceService.saveContext()
+        }
+    }
+
 }
