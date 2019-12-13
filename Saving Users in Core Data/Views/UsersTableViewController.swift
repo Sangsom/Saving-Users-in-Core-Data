@@ -12,6 +12,7 @@ import CoreData
 class UsersTableViewController: UITableViewController {
 
     var users = [User]()
+    var usersController = UserController()
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -29,15 +30,8 @@ class UsersTableViewController: UITableViewController {
     }
 
     func loadData() {
-        let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
-
-        do {
-            let users = try PersistanceService.context.fetch(fetchRequest)
-            self.users = users
-            self.tableView.reloadData()
-        } catch {
-            print(error.localizedDescription)
-        }
+        users = usersController.loadUsers()
+        tableView.reloadData()
     }
 
     @objc func addUser() {
