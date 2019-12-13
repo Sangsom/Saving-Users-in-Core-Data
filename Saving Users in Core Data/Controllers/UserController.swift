@@ -31,6 +31,10 @@ class UserController {
         // Save into Core Data
         PersistanceService.saveContext()
 
+        saveToContacts(user)
+    }
+
+    private func saveToContacts(_ user: User) {
         if let firstName = user.firstName,
             let lastName = user.lastName {
 
