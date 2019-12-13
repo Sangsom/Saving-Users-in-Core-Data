@@ -103,7 +103,8 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Users" image="person" catalog="system" id="67T-6Q-o50"/>
                     <connections>
-                        <segue destination="dUg-Xe-KI8" kind="show" id="Jxj-6D-lBE"/>
+                        <segue destination="dUg-Xe-KI8" kind="show" identifier="UserDetails" id="pCp-YX-uFd"/>
+                        <segue destination="dwb-g5-abK" kind="presentation" identifier="AddUser" id="3an-bo-l86"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wEA-2Z-J4a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -124,7 +125,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgw-Rn-O0u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2878" y="331"/>
+            <point key="canvasLocation" x="3012" y="763"/>
+        </scene>
+        <!--Add User View Controller-->
+        <scene sceneID="izz-pJ-4Rr">
+            <objects>
+                <viewController id="dwb-g5-abK" customClass="AddUserViewController" customModule="Saving_Users_in_Core_Data" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JOn-oW-ewj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="uqv-6e-HUM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mIM-wd-IOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3035" y="56"/>
         </scene>
     </scenes>
     <resources>

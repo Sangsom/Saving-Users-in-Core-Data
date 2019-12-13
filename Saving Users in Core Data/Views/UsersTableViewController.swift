@@ -41,9 +41,7 @@ class UsersTableViewController: UITableViewController {
     }
 
     @objc func addUser() {
-        let vc = UIViewController()
-        vc.modalPresentationStyle = .formSheet
-        present(vc, animated: true)
+        performSegue(withIdentifier: "AddUser", sender: self)
     }
 }
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B4EF64523A23E0C00F6E124 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4EF64423A23E0C00F6E124 /* FormTextField.swift */; };
 		1B657BDB23A26C280026CAB2 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B657BDA23A26C280026CAB2 /* UserDetailsViewController.swift */; };
+		1B74E40123A2C81C000C801F /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B74E40023A2C81C000C801F /* AddUserViewController.swift */; };
 		1BBAC36423A179BD000304D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBAC36323A179BD000304D6 /* AppDelegate.swift */; };
 		1BBAC36823A179BD000304D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBAC36723A179BD000304D6 /* ViewController.swift */; };
 		1BBAC36B23A179BD000304D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BBAC36923A179BD000304D6 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		1B4EF64423A23E0C00F6E124 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		1B657BDA23A26C280026CAB2 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		1B74E3FF23A28AD3000C801F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1B74E40023A2C81C000C801F /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
 		1BBAC36023A179BD000304D6 /* Saving Users in Core Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saving Users in Core Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BBAC36323A179BD000304D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BBAC36723A179BD000304D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				1BBAC36723A179BD000304D6 /* ViewController.swift */,
 				1BBAC37E23A2028F000304D6 /* UsersTableViewController.swift */,
+				1B74E40023A2C81C000C801F /* AddUserViewController.swift */,
 				1B4EF64423A23E0C00F6E124 /* FormTextField.swift */,
 				1B657BDA23A26C280026CAB2 /* UserDetailsViewController.swift */,
 			);
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BE5BAC823A22AD200A7A00E /* Address+CoreDataClass.swift in Sources */,
+				1B74E40123A2C81C000C801F /* AddUserViewController.swift in Sources */,
 				1B4EF64523A23E0C00F6E124 /* FormTextField.swift in Sources */,
 				1BBAC36823A179BD000304D6 /* ViewController.swift in Sources */,
 				1BBAC36423A179BD000304D6 /* AppDelegate.swift in Sources */,
